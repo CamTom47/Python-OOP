@@ -20,3 +20,10 @@ class SerialGenerator:
     100
     """
 
+    def __init__(self, start=100):
+        self.start = start;
+    """Initialize start of Serial """
+
+    def generate(self):
+        self.start += 1;
+        return self.start;
